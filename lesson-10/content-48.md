@@ -19,6 +19,7 @@ JPA04.java
 
 ```java
 import java.util.Scanner;
+import static java.lang.System.out;
 
 public class JPA04 {
 
@@ -28,10 +29,10 @@ public class JPA04 {
         String input;
         
         input = prompt("Input a string: ");
-        System.out.printf("%s has %d As\n", input, countA(input));
+        out.printf("%s has %d As\n", input, countA(input));
         
         input = prompt("Input a string: ");
-        System.out.printf("%s has %d As\n", input, countA(input));
+        out.printf("%s has %d As\n", input, countA(input));
     }
 
     public static int countA(String str) {
