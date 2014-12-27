@@ -38,71 +38,81 @@ Fang-afterTax Ins: 6380.0
 JPA06_2.java
 
 ```java
-import java.util.*;
-
 abstract class Teacher {
-    String name;
-    int rate,totalHours;
-    Teacher(String n,int r,int t){
-        name = n;
-        rate = r;
-        totalHours = t;
-    }
-    abstract double salary();
-    double getTax() {
-        return this.salary() * 0.1;
-    }
-    double afterTaxIns() {
-        return this.salary() - this.getTax() - 100;
-    }
+	protected String name;
+	protected int rate;
+	protected int totalHours;
+	
+	abstract public double salary();
+
+	public double afterTaxIns() {
+		return salary() * 0.9 - 100;
+	}
 }
 
 class PartTimeTeacher extends Teacher {
-    PartTimeTeacher(String n,int r,int t) {
-        super(n,r,t);
-    }
-    double salary(){
-        return totalHours * rate;
-    }
+
+	public PartTimeTeacher(String name, int rate, int totalHours) {
+		this.name = name;
+		this.rate = rate;
+		this.totalHours = totalHours;
+	}
+
+	public double salary() {
+		return totalHours * rate;
+	}
 }
 
 class FullTimeTeacher extends Teacher {
-    FullTimeTeacher(String n,int r,int t) {
-        super(n,r,t);
-    }
-    double salary() {
-        return 9 * rate + ((totalHours - 9) * rate * 0.8);
-    }
+	
+	public FullTimeTeacher(String name, int rate, int totalHours) {
+		this.name = name;
+		this.rate = rate;
+		this.totalHours = totalHours;
+	}
+
+	public double salary() {
+		return 9 * rate + ((totalHours - 9) * rate * 0.8);
+	}
 }
 
 class Manager extends FullTimeTeacher {
-    int rank;
-    Manager(String n, int r, int t, int ra) {
-        super(n,r,t);
-        rank = ra;
-    }
-    double salary() {
-        return super.salary() + rank * 500;
-    }
+
+	private int rank;
+
+	public Manager(String name, int rate, int totalHours, int rank) {
+		super(name, rate, totalHours);
+		
+		this.rank = rank;
+	}
+	
+	public double salary() {
+		return super.salary() + rank * 500;
+	}
+
+	public double getTotalSalary() {
+		return salary();
+	}
 }
 
 public class JPA06_2 {
     public static void main(String argv[]) {
         PartTimeTeacher p1 = new PartTimeTeacher("John",400,2);
         PartTimeTeacher p2 = new PartTimeTeacher("Mary",300,4);
-        FullTimeTeacher f1 = new FullTimeTeacher("Peter",400,9);
-        FullTimeTeacher f2 = new FullTimeTeacher("Paul",300,12);
-        FullTimeTeacher f3 = new FullTimeTeacher("Eric",350,15);
+        Teacher f1 = new FullTimeTeacher("Peter",400,9);
+        Teacher f2 = new FullTimeTeacher("Paul",300,12);
+        Teacher f3 = new FullTimeTeacher("Eric",350,15);
         
-        System.out.println("John-afterTaxIns: " + p1.afterTaxIns());
-        System.out.println("Mary-afterTaxIns: " + p2.afterTaxIns());
-        System.out.println("Peter-afterTaxIns: " + f1.afterTaxIns());
-        System.out.println("Paul-afterTaxIns: " + f2.afterTaxIns());
-        System.out.println("Eric-afterTaxIns: " + f3.afterTaxIns());
+        System.out.println("John-afterTaxIns：" + p1.afterTaxIns());
+        System.out.println("Mary-afterTaxIns：" + p2.afterTaxIns());
+        System.out.println("Peter-afterTaxIns：" + f1.afterTaxIns());
+        System.out.println("Paul-afterTaxIns：" + f2.afterTaxIns());
+        System.out.println("Eric-afterTaxIns：" + f3.afterTaxIns());
 
         Manager am1 = new Manager("Fang", 500, 12, 3);
-        System.out.println("Fang-Manager: " + am1.salary());
-        System.out.println("Fang-afterTax Ins: " + am1.afterTaxIns());
+        System.out.println("Fang-Manager：" + am1.getTotalSalary());
+        System.out.println("Fang-afterTaxIns：" + am1.afterTaxIns());
+
 
     }
 }
