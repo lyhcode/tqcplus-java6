@@ -24,63 +24,72 @@ Eric is higher than John
 JPA06_3.java
 
 ```java
-import java.util.*;
-
 abstract class Teacher {
-    String name;
-    int rate,totalHours;
-    Teacher(String n,int r,int t){
-        name = n;
-        rate = r;
-        totalHours = t;
-    }
-    abstract double salary();
-    double getTax() {
-        return this.salary() * 0.1;
-    }
-    double afterTaxIns() {
-        return this.salary() - this.getTax() - 100;
-    }
-    String getName() {
-        return name;
-    }
-    void compare(Teacher that) {
-        if (this.salary() > that.salary()) {
-            System.out.printf("%s is higher than %s\n", this.getName(), that.getName()); 
-        } else {
-            System.out.printf("%s is higher than %s\n", that.getName(), this.getName());
-        }
-    }
+	protected String name;
+	protected int rate;
+	protected int totalHours;
+	
+	abstract public double salary();
+
+	public double afterTaxIns() {
+		return salary() * 0.9 - 100;
+	}
+	
+	public void compare(Teacher t) {
+		if (this.salary() > t.salary()) {
+			System.out.println(this.name + " is higher than " + t.name);
+		}
+		else {
+			System.out.println(t.name + " is higher than " + this.name);
+		}
+	}
 }
 
 class PartTimeTeacher extends Teacher {
-    PartTimeTeacher(String n,int r,int t) {
-        super(n,r,t);
-    }
-    double salary(){
-        return totalHours * rate;
-    }
+
+	public PartTimeTeacher(String name, int rate, int totalHours) {
+		this.name = name;
+		this.rate = rate;
+		this.totalHours = totalHours;
+	}
+
+	public double salary() {
+		return totalHours * rate;
+	}
 }
 
 class FullTimeTeacher extends Teacher {
-    FullTimeTeacher(String n,int r,int t) {
-        super(n,r,t);
-    }
-    double salary() {
-        return 9 * rate + ((totalHours - 9) * rate * 0.8);
-    }
+	
+	public FullTimeTeacher(String name, int rate, int totalHours) {
+		this.name = name;
+		this.rate = rate;
+		this.totalHours = totalHours;
+	}
+
+	public double salary() {
+		return 9 * rate + ((totalHours - 9) * rate * 0.8);
+	}
 }
 
 class Manager extends FullTimeTeacher {
-    int rank;
-    Manager(String n, int r, int t, int ra) {
-        super(n,r,t);
-        rank = ra;
-    }
-    double salary() {
-        return super.salary() + rank * 500;
-    }
+
+	private int rank;
+
+	public Manager(String name, int rate, int totalHours, int rank) {
+		super(name, rate, totalHours);
+		
+		this.rank = rank;
+	}
+	
+	public double salary() {
+		return super.salary() + rank * 500;
+	}
+
+	public double getTotalSalary() {
+		return salary();
+	}
 }
+
 
 public class JPA06_3 {
     public static void main(String argv[]) {
@@ -89,8 +98,9 @@ public class JPA06_3 {
         FullTimeTeacher f1 = new FullTimeTeacher("Peter",400,9);
         FullTimeTeacher f2 = new FullTimeTeacher("Paul",300,12);
         FullTimeTeacher f3 = new FullTimeTeacher("Eric",350,15);
+        
         Manager am1 = new Manager("Fang", 500, 12, 3);
-
+       
         am1.compare(f3);
         p1.compare(f3);
     }
