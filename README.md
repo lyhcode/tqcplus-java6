@@ -29,7 +29,7 @@
 
 ## 參考書
 
-* [Java SE 6 技術手冊](http://caterpillar.gitbooks.io/javase6tutorial/)
+* [Java SE 6 技術手冊](http://caterpillar.gitbooks.io/javase6tutorial/)（林信良）
 
 ## 業師資料
 
