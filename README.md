@@ -27,6 +27,10 @@
 
 程式設計實務經驗養成、通過 TQC+ Java 6 專業認證。
 
+## 參考書
+
+* [Java SE 6 技術手冊](http://caterpillar.gitbooks.io/javase6tutorial/)
+
 ## 業師資料
 
 林彥宏（[lyhcode](http://lyhcode.info)）
