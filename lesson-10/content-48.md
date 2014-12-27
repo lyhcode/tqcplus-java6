@@ -19,29 +19,39 @@ JPA04.java
 
 ```java
 import java.util.Scanner;
+import static java.lang.System.out;
 
 public class JPA04 {
-    
-    static Scanner keyboard = new Scanner(System.in);
-    
+
+    static Scanner scanner = new Scanner(System.in);
+
     public static void main(String args[]) {
-        String s; 
-        System.out.print("Input a string: ");
-        s = keyboard.nextLine();
-        System.out.printf("%s has %d As\n", s, countA(s));
-        System.out.print("Input a string: ");
-        s = keyboard.nextLine();
-        System.out.printf("%s has %d As\n", s, countA(s));
+        String input;
+        
+        input = prompt("Input a string: ");
+        out.printf("%s has %d As\n", input, countA(input));
+        
+        input = prompt("Input a string: ");
+        out.printf("%s has %d As\n", input, countA(input));
+    }
+
+    public static int countA(String str) {
+        return count(str, "A");
     }
     
-    public static int countA(String str) {
-        if (str.equals("")) {
+    public static int count(String str, String target) {
+    	if (str.isEmpty()) {
             return 0;
-        } else if (str.substring(0, 1).equals("A")) {
-            return 1 + countA(str.substring(1));
-        } else {
-            return countA(str.substring(1));
         }
+    	if (str.substring(0, 1).equals(target)) {
+            return count(str.substring(1), target) + 1;
+        }
+    	return count(str.substring(1), target);
+    }
+    
+    public static String prompt(String msg) {
+    	System.out.println(msg);
+    	return scanner.nextLine();
     }
 }
 ```
