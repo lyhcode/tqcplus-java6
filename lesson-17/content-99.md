@@ -33,48 +33,54 @@ Erit-FullTime: 4830.0
 JPA06_1.java
 
 ```java
-import java.util.*;
 abstract class Teacher {
-    String name;
-    int rate,totalHours;
-    Teacher(String n,int r,int t){
-        name = n;
-        rate = r;
-        totalHours = t;
-    }
-    abstract double salary();
+	protected String name;
+	protected int rate;
+	protected int totalHours;
+	
+	abstract public double salary();
 }
 
 class PartTimeTeacher extends Teacher {
-    PartTimeTeacher(String n,int r,int t) {
-        super(n,r,t);
-    }
-    double salary(){
-        return totalHours * rate;
-    }
+
+	public PartTimeTeacher(String name, int rate, int totalHours) {
+		this.name = name;
+		this.rate = rate;
+		this.totalHours = totalHours;
+	}
+
+	public double salary() {
+		return totalHours * rate;
+	}
+	
 }
 
 class FullTimeTeacher extends Teacher {
-    FullTimeTeacher(String n,int r,int t) {
-        super(n,r,t);
-    }
-    double salary() {
-        return 9 * rate + ((totalHours - 9) * rate * 0.8);
-    }
+	
+	public FullTimeTeacher(String name, int rate, int totalHours) {
+		this.name = name;
+		this.rate = rate;
+		this.totalHours = totalHours;
+	}
+
+	public double salary() {
+		return 9 * rate + ((totalHours - 9) * rate * 0.8);
+	}
+	
 }
 
 public class JPA06_1 {
     public static void main(String argv[]) {
-        PartTimeTeacher p1 = new PartTimeTeacher("John",400,2);
+        PartTimeTeacher p1 = new PartTimeTeacher("John", 400, 2);
         PartTimeTeacher p2 = new PartTimeTeacher("Mary",300,4);
         FullTimeTeacher f1 = new FullTimeTeacher("Peter",400,9);
         FullTimeTeacher f2 = new FullTimeTeacher("Paul",300,12);
         FullTimeTeacher f3 = new FullTimeTeacher("Eric",350,15);
         System.out.println("John-PartTime: " + p1.salary());
         System.out.println("Mary-PartTime: " + p2.salary());
-        System.out.println("Peter-FullTime: " + f1.salary());
-        System.out.println("Paul-FullTime: " + f2.salary());
-        System.out.println("Erit-FullTime: " + f3.salary());
+        System.out.println("Peter-FulLTime: " + f1.salary());
+        System.out.println("Paul-FulLTime: " + f2.salary());
+        System.out.println("Eric-FulLTime: " + f3.salary());
     }
 }
 ```
