@@ -13,3 +13,13 @@ Eclipse Classic
 Eclipse IDE for Java Developers
 
 解壓縮放至 C:\ 後，開啟資料夾下的 eclipse.exe 執行檔啟動開發工具。
+
+加速 Eclipse 開發工具的執行。
+
+編輯 `eclipse.ini` 設定檔。
+
+```
+-Xms768m
+-Xmx768m
+-XX:+UseParallelGC
+```
