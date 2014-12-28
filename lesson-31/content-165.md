@@ -34,6 +34,6 @@ Eclipse IDE for Java Developers
 
 參考[適合程式設計的等寬字型](http://www.gtwang.org/2014/02/monospaced-font-for-programmers.html)。
 
-* [Inconsolata](http://www.levien.com/type/myfonts/Inconsolata.otf)
+* 下載 [Inconsolata](http://www.levien.com/type/myfonts/Inconsolata.otf) 字型
 
 
