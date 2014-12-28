@@ -5,11 +5,11 @@
 <!--
 * 2013 研習課程簡報 http://goo.gl/bKHia
 * Robocode Java 坦克主程式下載 http://goo.gl/UpVb7
--->
 
 檔案下載
 
 * 1228 模擬考試測驗檔 - http://120.118.152.129:8000/JAVA6-MOCK-EXAM.exe (104,204,306,404,506,606)
+-->
 
 適合讀者：
 
