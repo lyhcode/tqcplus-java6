@@ -14,7 +14,7 @@ Eclipse IDE for Java Developers
 
 解壓縮放至 C:\ 後，開啟資料夾下的 eclipse.exe 執行檔啟動開發工具。
 
-## 加速 Eclipse 開發工具的執行
+## 加速 Eclipse 執行效能
 
 編輯 `eclipse.ini` 設定檔。
 
