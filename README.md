@@ -7,10 +7,6 @@
 * Robocode Java 坦克主程式下載 http://goo.gl/UpVb7
 -->
 
-檔案下載
-
-* [1228 模擬考試測驗檔](JAVA6-MOCK-EXAM.exe)
-
 
 適合讀者：
 
