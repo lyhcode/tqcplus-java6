@@ -33,3 +33,7 @@ Eclipse IDE for Java Developers
 喜好設定 / 一般事項 / 外觀 / 顏色與字型 / 基本 / 文字字型 / 編輯 ...
 
 參考[適合程式設計的等寬字型](http://www.gtwang.org/2014/02/monospaced-font-for-programmers.html)。
+
+* [Inconsolata](http://www.levien.com/type/myfonts/Inconsolata.otf)
+
+
