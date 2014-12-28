@@ -1,6 +1,7 @@
 # Summary
 
 * [開始學習](README.md)
+   * checkenv
 * [第一類：基本認識](lesson-4/README.md)
    * [101. 字串列印](lesson-4/content-11.md)
    * [102. 單位換算](lesson-4/content-12.md)
