@@ -24,7 +24,7 @@ Eclipse IDE for Java Developers
 -XX:+UseParallelGC
 ```
 
-## 關閉啟動外掛程式（讓開啟速度更快）。
+## 關閉啟動外掛程式（讓開啟速度更快）
 
 喜好設定 / 一般事項 / 啟動與關閉 / （全部取消勾選）啟動時啟動外掛程式
 
