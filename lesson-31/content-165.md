@@ -28,4 +28,8 @@ Eclipse IDE for Java Developers
 
 喜好設定 / 一般事項 / 啟動與關閉 / （全部取消勾選）啟動時啟動外掛程式
 
+調整編輯器字型。
 
+喜好設定 / 一般事項 / 外觀 / 顏色與字型 / 基本 / 文字字型 / 編輯 ...
+
+參考[適合程式設計的等寬字型](http://www.gtwang.org/2014/02/monospaced-font-for-programmers.html)。
