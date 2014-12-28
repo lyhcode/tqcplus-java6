@@ -28,3 +28,4 @@ Eclipse IDE for Java Developers
 
 喜好設定 / 一般事項 / 啟動與關閉 / （全部取消勾選）啟動時啟動外掛程式
 
+
