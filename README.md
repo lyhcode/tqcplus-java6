@@ -7,7 +7,6 @@
 * Robocode Java 坦克主程式下載 http://goo.gl/UpVb7
 -->
 
-
 適合讀者：
 
 以大專院校學生為主。
