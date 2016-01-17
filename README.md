@@ -15,9 +15,11 @@
 
 以大專院校學生為主。
 
+<!--
 業師協同教學：
 
 * 正修科技大學資工系，TQC+ Java 6 認證研習會 103/12/27-28
+-->
 
 授課方式：
 
@@ -30,16 +32,17 @@
 
 程式設計實務經驗養成、通過 TQC+ Java 6 專業認證。
 
-## 參考書
-
-* [Java SE 6 技術手冊](http://caterpillar.gitbooks.io/javase6tutorial/)（林信良）
-
-## 業師資料
+## 講師
 
 林彥宏（[lyhcode](http://lyhcode.info)）
 
+多年的 PHP / .NET / Java / JavaScript 軟體專案開發經驗，熟悉 Linux 伺服器管理及開發平台，曾擔任 Java Developer Day、JCConf 講者及 CodeData 專欄作者，致力於推廣 Groovy / Grails / Gradle / Geb 等 Java 開源開發工具。
+
+學歷
+
 * 雲林科技大學資訊管理系碩士
-* 現職資深軟體工程師與技術顧問
-* 思創軟體創辦人
-* PLWeb 程式語言學習網共同創辦人
-* 創毅資訊股份有限公司共同創辦人
+
+經歷
+
+* 創科資訊股份有限公司，技術總監
+* 遠通科技股份有限公司，資深軟體工程師
