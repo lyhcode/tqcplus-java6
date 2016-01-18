@@ -1,6 +1,6 @@
 # JVM、JRE 與 JDK
 
-### JVM ###
+## JVM
 
 JVM 是 Java Virtual Machine（Java 虛擬機器）的縮寫。
 
@@ -8,6 +8,11 @@ JVM 是 Java Virtual Machine（Java 虛擬機器）的縮寫。
 
 Java 的程式必須透過虛擬機器才能執行，這是因為 Java 希望達成跨平台及裝置的目的，無論在 Windows、Linux 或 Mac OS X 等不同作業系統，或者電腦、手機甚至家電等不同裝置，只要預先安裝好 Java VM 就能執行 Java 程式。
 
-### JRE ###
+## JRE
 
-### JDK ###
+## JDK
+
+### 是非題：JVM 與 Byte Code
+
+Java 在編譯後會產生 Byte Code，並間接在 Java 虛擬機器（Java Virtual Machine，簡稱 JVM）上執行。
+這個 JVM 其實是一個軟體，其功用是解譯並執行 Byte Code，而 JVM 仍然是在硬體上執行。
