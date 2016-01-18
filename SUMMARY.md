@@ -83,6 +83,15 @@
    * [108. 覆載方法](jp01/108.md)
    * [109. 變數範圍](jp01/109.md)
    * [110. 圓形面積](jp01/110.md)
+* [認證考前準備](lesson-31/README.md)
+   * [題庫軟體安裝提示](lesson-31/content-163.md)
+   * [JCreator 開發工具說明](lesson-31/content-164.md)
+   * [Eclipse 開發工具說明](lesson-31/content-165.md)
+   * [jEdit 開發工具說明](lesson-31/content-166.md)
+* [整合開發工具（IDE）](lesson-145/README.md)
+* [補充資源](lesson-142/README.md)
+
+<!--
 * [第二類：條件判斷式](lesson-6/README.md)
    * [201. 分數篩選](lesson-6/content-70.md)
    * [202. 比較大小](lesson-6/content-21.md)
@@ -181,10 +190,6 @@
    * [610. 題目三](lesson-19/content-111.md)
    * [610. 題目四](lesson-19/content-112.md)
    * [610. 題目五](lesson-19/content-113.md)
-* [認證考前準備](lesson-31/README.md)
-   * [題庫軟體安裝提示](lesson-31/content-163.md)
-   * [JCreator 開發工具說明](lesson-31/content-164.md)
-   * [Eclipse 開發工具說明](lesson-31/content-165.md)
-   * [jEdit 開發工具說明](lesson-31/content-166.md)
-* [整合開發工具（IDE）](lesson-145/README.md)
-* [補充資源](lesson-142/README.md)
+-->
+
+
