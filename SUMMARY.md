@@ -83,6 +83,17 @@
    * [108. 覆載方法](jp01/108.md)
    * [109. 變數範圍](jp01/109.md)
    * [110. 圓形面積](jp01/110.md)
+* [第二類：條件判斷式](jp02/README.md)
+   * [201. 分數篩選](jp02/201.md)
+   * [202. 比較大小](jp02/202.md)
+   * [203. 判斷奇偶數](jp02/203.md)
+   * [204. 公倍數計算](jp02/204.md)
+   * [205. 倍數判斷](jp02/205.md)
+   * [206. 及格分數](jp02/206.md)
+   * [207. 三角形邊長判斷](jp02/207.md)
+   * [208. 分級制度](jp02/208.md)
+   * [209. 象限座標](jp02/209.md)
+   * [210. 鍵盤字元判斷](jp02/210.md)
 * [認證考前準備](lesson-31/README.md)
    * [題庫軟體安裝提示](lesson-31/content-163.md)
    * [JCreator 開發工具說明](lesson-31/content-164.md)
@@ -92,17 +103,6 @@
 * [補充資源](lesson-142/README.md)
 
 <!--
-* [第二類：條件判斷式](lesson-6/README.md)
-   * [201. 分數篩選](lesson-6/content-70.md)
-   * [202. 比較大小](lesson-6/content-21.md)
-   * [203. 判斷奇偶數](lesson-6/content-71.md)
-   * [204. 公倍數計算](lesson-6/content-22.md)
-   * [205. 倍數判斷](lesson-6/content-72.md)
-   * [206. 及格分數](lesson-6/content-23.md)
-   * [207. 三角形邊長判斷](lesson-6/content-73.md)
-   * [208. 分級制度](lesson-6/content-29.md)
-   * [209. 象限座標](lesson-6/content-74.md)
-   * [210. 鍵盤字元判斷](lesson-6/content-30.md)
 * [第三類：迴圈](lesson-8/README.md)
    * [301. 整數連加](lesson-8/content-75.md)
    * [302. 巢狀迴圈](lesson-8/content-31.md)
@@ -191,5 +191,3 @@
    * [610. 題目四](lesson-19/content-112.md)
    * [610. 題目五](lesson-19/content-113.md)
 -->
-
-
