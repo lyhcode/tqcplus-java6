@@ -97,3 +97,21 @@ Output
  *******
 *********
 ```
+
+for 迴圈與標籤
+
+```java
+outer:
+for (int i = 0; i < 5; i++) {
+
+	inner:
+	for (int j = 0; j < 5; j++) {
+		
+		System.out.printf("i = %d, j = %d\n", i, j);
+		
+		continue;
+	}
+	
+	System.out.println("outer");
+}
+```
