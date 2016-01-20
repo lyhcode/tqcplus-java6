@@ -1,5 +1,7 @@
 # memo
 
+第二天
+
 迴圈練習：九九乘法表（for-loop）
 
 ```java
@@ -36,7 +38,7 @@ while (i <= 9) {
 
 ```
 
-列印三角形
+列印倒三角形
 
 ```java
 for (int x = 0; x < 5; x++) {
@@ -51,4 +53,47 @@ for (int x = 0; x < 5; x++) {
 	
 	System.out.println();
 }
+```
+
+Output
+
+```
+*********
+ *******
+  *****
+   ***
+    *
+```
+
+列印沙漏
+
+```
+for (int x = -4; x < 5; x++) {
+
+	int n = 4 - Math.abs(x);
+	
+	for (int y = 0; y < n; y++) {
+		System.out.print(" ");				
+	}
+	
+	for (int y = 0; y < (9 - n * 2); y++) {
+		System.out.print("*");
+	}
+	
+	System.out.println();
+}
+```
+
+Output
+
+```
+*********
+ *******
+  *****
+   ***
+    *
+   ***
+  *****
+ *******
+*********
 ```
