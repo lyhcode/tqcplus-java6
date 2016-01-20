@@ -1,6 +1,6 @@
 # memo
 
-迴圈練習：九九乘法表
+迴圈練習：九九乘法表（for-loop）
 
 ```java
 for (int i = 1; i <= 9; i++) {
@@ -16,6 +16,7 @@ for (int i = 1; i <= 9; i++) {
 ```
 
 迴圈練習：九九乘法表（while-loop）
+
 ```
 int i = 1;
 
