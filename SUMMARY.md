@@ -1,6 +1,7 @@
 # Summary
 
 * [開始學習](README.md)
+   * memo
 * [認識 Java](lesson-1/README.md)
    * [語言特性](lesson-1/content-2.md)
    * [應用平台](lesson-1/content-3.md)
@@ -134,8 +135,6 @@
    * [jEdit 開發工具說明](lesson-31/content-166.md)
 * [整合開發工具（IDE）](lesson-145/README.md)
 * [補充資源](lesson-142/README.md)
-
-<!--
 * [第六類：汽車零件設計](lesson-20/README.md)
    * [601. 題目一](lesson-20/content-116.md)
    * [601. 題目二](lesson-20/content-117.md)
@@ -190,4 +189,4 @@
    * [610. 題目三](lesson-19/content-111.md)
    * [610. 題目四](lesson-19/content-112.md)
    * [610. 題目五](lesson-19/content-113.md)
--
+
