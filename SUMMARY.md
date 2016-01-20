@@ -134,7 +134,7 @@
    * [jEdit 開發工具說明](lesson-31/content-166.md)
 * [整合開發工具（IDE）](lesson-145/README.md)
 * [補充資源](lesson-142/README.md)
-* memo
+* [memo](memo.md)
 * [第六類：汽車零件設計](lesson-20/README.md)
    * [601. 題目一](lesson-20/content-116.md)
    * [601. 題目二](lesson-20/content-117.md)
