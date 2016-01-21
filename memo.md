@@ -116,7 +116,7 @@ for (int i = 0; i < 5; i++) {
 
 迴圈轉遞迴練習
 
-```
+```java
 public static void countDown(int n) {
 	while (n >= 0) {
 		System.out.println( n-- );
