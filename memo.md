@@ -135,3 +135,21 @@ public static void countDownR(int n) {
 }
 ```
 
+列印星號
+
+```java
+public static String star(int n) {
+	if (n > 0) {
+		return "*" + star(n - 1);
+	}
+	return "";
+}
+```
+
+
+```java
+    public static String star(int n) {
+    	return n > 0 ? "*" + star(n - 1) : "";
+    }
+
+```
