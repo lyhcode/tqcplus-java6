@@ -1,6 +1,4 @@
-# memo
-
-第二天
+# 教學筆記
 
 迴圈練習：九九乘法表（for-loop）
 
@@ -113,5 +111,26 @@ for (int i = 0; i < 5; i++) {
 	}
 	
 	System.out.println("outer");
+}
+```
+
+迴圈轉遞迴練習
+
+```
+public static void countDown(int n) {
+	while (n >= 0) {
+		System.out.println( n-- );
+	}
+	System.out.println("END");
+}
+
+public static void countDownR(int n) {
+	if (n >= 0) {
+		System.out.println(n);
+		countDownR(n - 1);
+	}
+	else {
+    	System.out.println("END");
+	}
 }
 ```
