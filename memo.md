@@ -256,3 +256,11 @@ public class Main {
 	}
 }
 ```
+
+費氏數列遞迴版
+
+```
+public static int fib(int n) {
+	return n <= 1 ? n : fib(n - 1) + fib(n - 2);
+}
+```
