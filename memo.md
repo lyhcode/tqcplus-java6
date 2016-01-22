@@ -151,5 +151,108 @@ public static String star(int n) {
     public static String star(int n) {
     	return n > 0 ? "*" + star(n - 1) : "";
     }
+```
 
+撲克牌遊戲
+
+```
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+
+	private static Scanner scanner = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+
+		String[] poker = {
+				"A", "2", "3", "4", "5", "6",
+				"7", "8", "9", "10", "J", "Q", "K" };
+
+		for (int i = 0; i < 13; i++) {
+			int rnd = (int) (Math.random() * 13);
+
+			String tmp = poker[i];
+			poker[i] = poker[rnd];
+			poker[rnd] = tmp;
+		}
+		
+		List<String> computer = new ArrayList<String>();
+		List<String> player = new ArrayList<String>();
+		
+		String input;
+		int count = 0;
+		
+		do {
+			// 電腦抽出一張牌
+			computer.add(poker[count++]);
+			
+			// 玩家抽出一張牌
+			player.add(poker[count++]);
+			
+			System.out.print("玩家：");
+			print(player);
+			
+			if (total(player) >= 21) {
+				break;
+			}
+			
+			System.out.println("是否繼續抽牌(y/n)？");
+			input = scanner.next();
+		}
+		while (input.equals("y"));
+		
+		System.out.print("玩家：");
+		print(player);
+		System.out.printf("點數：%d\n", total(player));
+		
+		System.out.print("電腦：");
+		print(computer);
+		System.out.printf("點數：%d\n", total(computer));
+
+
+		if (total(player) == 21) {
+			System.out.println("玩家勝！");
+		}
+		else if (total(player) > 21) {
+			System.out.println("玩家爆牌！電腦勝！");
+		}
+		else if (total(computer) > 21) {
+			System.out.println("電腦爆牌！玩家勝！");
+		}
+		else if (total(player) == total(computer)) {
+			System.out.println("平手！");
+		}
+		else if (total(player) > total(computer)) {
+			System.out.println("玩家勝！");
+		}
+		else {
+			System.out.println("電腦勝！");
+		}
+		
+	}
+
+	private static void print(List<String> list) {
+		for (String item : list) {
+			System.out.printf("%s ", item);
+		}
+		System.out.println();
+	}
+	
+	private static int total(List<String> list) {
+		int total = 0;
+		for (String item : list) {
+			if (item.equals("A")) {
+				total ++;
+			}
+			else if (item.equals("J") || item.equals("Q") || item.equals("K")) {
+				total += 10;
+			} else {
+				total += new Integer(item);
+			}
+		}
+		return total;
+	}
+}
 ```
